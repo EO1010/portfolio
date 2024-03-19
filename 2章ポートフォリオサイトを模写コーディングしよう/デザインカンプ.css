@@ -1,0 +1,108 @@
+.body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: Noto sans Japanese;
+}
+.home {
+    font-size: 34px;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+.menu {
+    font-size: 34px;
+    display: inline;
+    text-align: right;
+    font-weight: bold;
+} 
+.nav {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.camera {
+    width: 100%;
+    height: auto;
+}
+.camera img {
+    width: 100%;
+}
+.h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin:50px 0;
+    }
+.description {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    column-gap: 30px;
+    align-items: center;
+}
+.description img {
+    border-radius: 50%;
+}
+.text p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.text ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+.flexbox-container {
+    display:flex;
+    justify-content: center;
+    column-gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.flexbox-item {
+    width: calc((100% - 40px) / 3);
+}
+.flexbox-item img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.copyright {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin:50px auto;
+}
+@media screen and (max-width: 767px) {
+    .flexbox-item {
+        width: 100%;
+    }
+    .flexbox-container {
+        flex-direction: column;
+        row-gap: 30px;
+        /* width:90%; */
+        padding:0 5%;
+    }
+    .home, .menu, .text p {
+        font-size: 20px;
+    }
+    .nav {
+        width: 90%;
+    }
+    .text ul li {
+        font-size: 14px;
+    }
+    .text ul {
+        padding-left: 10px;
+    }
+    .description img {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+    }
+    .description  {
+        width: 90%;
+    }
+
+}
